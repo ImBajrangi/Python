@@ -1,8 +1,6 @@
-
-n= int(input("enter a Number :"))
-arr = list(map(int, input().split()))
-
-for i in range(n):
-    for j in range(i, n):
-        subarray = arr[i:j+1]
-        print(*subarray)
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+N = int(input("enter a numeber : "))
+print(factorial(N))

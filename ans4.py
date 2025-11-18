@@ -1,8 +1,8 @@
+def print_reverse(n):
+    if n == 0:
+        return
+    print(n, end=" ")
+    print_reverse(n - 1)
+N = int(input("enter a number : "))
 
-N = int(input("Enter a Number : "))
-arr = list(map(int, input().split()))
-for i in range(N):
-    current_sum = 0
-    for j in range(i, N):
-        current_sum += arr[j]
-        print(current_sum)
+print_reverse(N)

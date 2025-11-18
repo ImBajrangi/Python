@@ -1,10 +1,6 @@
-
-n= int(input("Enter a Number :"))
-arr = list(map(int, input().split()))
-
-total = 0
-
-for i in range(n):
-    total += arr[i] * (i + 1) * (n - i)
-
-print(total)
+def sum_of_digits(n):
+    if n == 0:
+        return 0
+    return (n % 10) + sum_of_digits(n // 10)
+N = int(input("enter a number : "))
+print(sum_of_digits(N))
